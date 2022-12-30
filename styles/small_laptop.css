@@ -1,0 +1,14 @@
+@media(min-width: 992px) and (max-width: 1200px) {
+    .calculator {
+        width: 39%;
+        margin-top: 30px;
+    }
+    button {
+        width: 60px;
+        padding: 15px;
+        margin-left: 40px;
+    }
+    #equalto {
+        width: 36.4%;
+    }
+}

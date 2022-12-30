@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/phone.css">
+    <link rel="stylesheet" href="styles/tablet.css">
+    <link rel="stylesheet" href="styles/small_laptop.css">
+</head>
+<body>
+    <div class="calculator">
+        <form id="cal" action=""> <h3>Bamidele Calculator</h3> 
+            <div id="display"></div>
+            <br>
+            <div id="output"></div>
+        </form>
+           
+        <button id="delete" onclick="operation1()">C</button>
+        <button id="brack" onclick="operation2()">()</button>
+        <button id="perc" onclick="operation3()">%</button>
+        <button id="div" onclick="operation4()">÷</button>
+        <br>
+        <button id="seven" onclick="operation5()">7</button>
+        <button id="eight" onclick="operation6()">8</button>
+        <button id="nine" onclick="operation7()">9</button>
+        <button id="mult" onclick="operation8()">x</button>
+        <br>
+        <button id="four" onclick="operation9()">4</button>
+        <button id="five" onclick="operation10()">5</button>
+        <button id="six" onclick="operation11()">6</button>
+        <button id="subt" onclick="operation12()">-</button>
+        <br>
+        <button id="one" onclick="operation13()">1</button>
+        <button id="two" onclick="operation14()">2</button>
+        <button id="three" onclick="operation15()">3</button>
+        <button id="plus" onclick="operation16()">+</button>
+        <br>
+        <button id="zero" onclick="operation17()">0</button>
+        <button id="point" onclick="operation18()">.</button>
+        <button id="equalto" onclick="operation19()">=</button>
+    </div>
+
+    <script type="text/javascript">
+        function operation18() {
+            display.innerText += '.'
+        }
+
+        function operation17() {
+            display.innerText += 0 
+        }
+        function operation15() {
+            display.innerText += 3
+        }
+        function operation14() {
+            display.innerText += 2
+        }
+        function operation13() {
+            display.innerText += 1
+        }
+
+        function operation11() {
+            display.innerText += 6
+        }
+        function operation10() {
+            display.innerText += 5
+        }
+        function operation9() {
+            display.innerText += 4
+        }
+        function operation7() {
+            display.innerText += 9
+        }
+        function operation6() {
+            display.innerText += 8
+        }
+        function operation5() {
+            display.innerText += 7
+        }
+        function operation8() {
+            display.innerText += '*'
+        }
+        function operation16() {
+            display.innerText += '+'
+        }
+        function operation12() {
+            display.innerText += '-'
+        }
+        function operation4() {
+            display.innerText += '/'
+        }
+        function operation3() {
+            display.innerText += '%'
+        }
+        function operation2() {
+            display.innerText += '()'
+        }
+        function operation19() {
+            display.innerText += '='
+        }
+        function operation19() {
+            output.innerText = eval (display.innerText)
+        }
+        function operation1() {
+            display.innerText = ''
+            output.innerText = '0'
+        }
+    
+        
+    </script>
+
+</body>
+</html>
