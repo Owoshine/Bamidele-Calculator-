@@ -91,9 +91,6 @@
         function operation4() {
             display.innerText += '/'
         }
-        function operation3() {
-            display.innerText += '%'
-        }
         function operation2() {
             display.innerText += '()'
         }
@@ -106,6 +103,9 @@
         function operation1() {
             display.innerText = ''
             output.innerText = '0'
+        }
+        function operation3() {
+            output.innerText = eval (display.innerText * 0.01);
         }
     
         

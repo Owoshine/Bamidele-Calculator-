@@ -1,7 +1,8 @@
 @media (max-width: 769px){
     .calculator {
-        width: 70%;
+        width: 90%;
         margin-top: 30px;
+        margin-left: 15px;
     }
     button {
         width: 40px;
